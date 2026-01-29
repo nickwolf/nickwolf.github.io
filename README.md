@@ -6,4 +6,4 @@ Product leader specializing in AI-powered EdTech products and platform evolution
 - Email: Nick@NicolasWolf.com
 - Location: Houston, TX
 
-View my full resume at: https://yourusername.github.io
+View my full resume at: https://nickwolf.github.io
