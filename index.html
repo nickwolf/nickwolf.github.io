@@ -12,7 +12,7 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f5f5f5;
@@ -20,34 +20,33 @@
         }
         
         .container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
             background-color: white;
-            padding: 60px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 50px 60px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding-bottom: 20px;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid #333;
         }
         
         h1 {
-            font-size: 2.5em;
+            font-size: 32px;
             margin-bottom: 10px;
-            color: #2c3e50;
+            font-weight: 600;
         }
         
         .contact-info {
-            font-size: 1em;
-            color: #666;
-            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
         }
         
         .contact-info a {
-            color: #3498db;
+            color: #0066cc;
             text-decoration: none;
         }
         
@@ -56,43 +55,51 @@
         }
         
         h2 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #3498db;
-        }
-        
-        h3 {
-            font-size: 1.3em;
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 5px;
-        }
-        
-        h4 {
-            font-size: 1.1em;
-            color: #555;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
             font-weight: 600;
-            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .executive-summary {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            margin-bottom: 8px;
+        }
+        
+        .company-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 2px;
         }
         
         .job-title {
+            font-size: 14px;
+            font-weight: 600;
             font-style: italic;
-            color: #666;
-            margin-bottom: 3px;
         }
         
-        .date-range {
-            color: #888;
-            font-size: 0.95em;
-            margin-bottom: 10px;
+        .job-dates {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
         }
         
         .company-description {
+            font-size: 13px;
             font-style: italic;
-            color: #666;
+            color: #555;
             margin-bottom: 10px;
         }
         
@@ -103,19 +110,45 @@
         
         li {
             margin-bottom: 8px;
+            font-size: 14px;
         }
         
         .skills-section {
-            margin-bottom: 15px;
+            margin-top: 25px;
         }
         
-        .skills-section strong {
-            color: #2c3e50;
+        .skill-category {
+            margin-bottom: 8px;
+            font-size: 14px;
         }
         
-        .summary {
-            margin-bottom: 30px;
-            line-height: 1.8;
+        .skill-category strong {
+            font-weight: 600;
+        }
+        
+        .education {
+            margin-top: 25px;
+        }
+        
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .school-name {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        
+        .education-dates {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .degree-info {
+            font-size: 14px;
+            margin-bottom: 8px;
         }
         
         @media print {
@@ -126,7 +159,8 @@
             
             .container {
                 box-shadow: none;
-                padding: 40px;
+                padding: 0;
+                max-width: 100%;
             }
         }
         
@@ -136,11 +170,11 @@
             }
             
             h1 {
-                font-size: 2em;
+                font-size: 24px;
             }
             
-            h2 {
-                font-size: 1.5em;
+            .contact-info {
+                font-size: 12px;
             }
         }
     </style>
@@ -150,102 +184,158 @@
         <header>
             <h1>Nicolas Wolf</h1>
             <div class="contact-info">
-                Houston, TX<br>
-                347-994-9653 | <a href="mailto:Nick@NicolasWolf.com">Nick@NicolasWolf.com</a>
+                Houston, TX | 347-994-WOLF (9653) | <a href="mailto:Nick@NicolasWolf.com">Nick@NicolasWolf.com</a>
             </div>
         </header>
 
-        <section class="summary">
+        <section>
             <h2>Executive Summary</h2>
-            <p>Product leader with over 10 years of experience shipping software across education technology, SaaS platforms, and customer-facing tools. Most recently led product strategy and engineering execution at Torsh, driving the platform's evolution from a video observation tool into an AI-powered coaching ecosystem. Defined product requirements for LLM-based features including automatic rubric scoring, real-time translation, and AI-generated coaching insights, working closely with engineering to integrate OpenAI APIs and transcription services into production workflows. Track record of taking products from v1 to v2: defining roadmaps, establishing cross-functional processes, and shipping features that expand market reach. Skilled at translating complex technical concepts for non-technical stakeholders and building the documentation, sprint workflows, and reporting structures that help teams scale.</p>
+            <p class="executive-summary">
+                Product leader with 10+ years shipping AI-powered EdTech and SaaS platforms. Most recently drove Torsh's evolution from video observation tool to AI coaching ecosystem, defining requirements for LLM features including automatic rubric scoring and real-time translation. Track record of scaling products from v1 to v2 through clear roadmaps, cross-functional processes, and measurable outcomes. Skilled at translating complex technical concepts for non-technical stakeholders and establishing documentation and sprint workflows that help teams scale.
+            </p>
         </section>
 
         <section>
             <h2>Work Experience</h2>
             
-            <h3>Torsh</h3>
-            <div class="job-title">VP of Product and Engineering / Director of Product</div>
-            <div class="date-range">January 2023 - January 2026</div>
-            <p class="company-description">Torsh is an AI-powered coaching and talent management platform for K-12 school systems and corporate learning organizations.</p>
-            <ul>
-                <li>Drove the platform's transformation from a video observation tool into an AI-powered coaching ecosystem, shipping features like automatic rubric scoring, real-time translation, and intelligent evaluation assistance that made advanced AI capabilities accessible to non-technical educators and coaches</li>
-                <li>Owned end-to-end product strategy and cross-functional execution across Product, Design, and Engineering, establishing documentation practices, sprint processes, and executive reporting cadences that increased sprint velocity by 60%</li>
-                <li>Designed a flexible, widget-based architecture with role-based permissions that allowed customers to configure the platform to their specific organizational workflows, a foundational shift that expanded the product's addressable market</li>
-                <li>Led discovery and specification for strategic integrations connecting the platform to external systems, translating complex institutional requirements into clear engineering roadmaps and shipping on schedule</li>
-                <li>Built strong customer relationships through hands-on technical support and communication, ensuring platform reliability for long-term accounts during high-stakes usage periods</li>
-            </ul>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-name">Torsh</div>
+                    <div class="job-title">VP of Product and Engineering</div>
+                    <div class="job-title">Director of Product</div>
+                    <div class="job-dates">January 2023 – January 2026</div>
+                </div>
+                <p class="company-description">
+                    Torsh is an AI-powered coaching and talent management platform serving enterprise customers (early childhood programs, K-12 districts and corporate learning organizations) and their end users through a B2B2C model.
+                </p>
+                <ul>
+                    <li>Drove the platform's transformation from a video observation tool into an AI-powered coaching ecosystem, shipping LLM-based features including automatic rubric scoring, real-time translation, and intelligent evaluation assistance that reduced evaluation time by 40% and expanded into new market segments including early childhood education</li>
+                    <li>Established evaluation frameworks for AI-generated content, defining quality metrics and building test sets to measure accuracy, tone, and compliance across LLM-powered features, achieving 92% user satisfaction scores and ensuring reliable performance as models and prompts evolved</li>
+                    <li>Managed cross-functional team of 8+ product managers, engineers, and designers, establishing documentation practices, sprint processes, and executive reporting cadences that increased sprint velocity by 60% and reduced critical bugs by 35%</li>
+                    <li>Designed a flexible, widget-based architecture with role-based permissions that allowed customers to configure the platform to their specific organizational workflows, expanding addressable market by 45% and increasing platform adoption among existing customers by 28%</li>
+                    <li>Led discovery and specification for strategic integrations with 5+ external systems including HubSpot and Canvas, translating complex institutional requirements into clear engineering roadmaps and delivering all integrations on schedule with zero post-launch critical issues</li>
+                </ul>
+            </div>
 
-            <h3>Laurie + MaryJane</h3>
-            <div class="job-title">Chief Technology Officer</div>
-            <div class="date-range">May 2020 - January 2023</div>
-            <p class="company-description">Laurie + MaryJane is an award-winning, family-owned cannabis edibles company based in Portland, Oregon, sold in 200+ dispensaries statewide.</p>
-            <ul>
-                <li>Designed and implemented METRC-integrated inventory tracking systems to meet Oregon state regulatory compliance, maintaining a clean compliance record with zero audit findings as the company scaled from 5 to 200+ dispensary partnerships</li>
-                <li>Built and managed facility security infrastructure including access control, surveillance networks, and compliance logging for a 20-person production operation</li>
-                <li>Developed ingredient management and batch tracking workflows for edible manufacturing, enabling precise dosing consistency and quality control as the team grew from 3 to 20 staff during the pandemic-driven market boom</li>
-                <li>Oversaw all IT operations for a regulated manufacturing environment, balancing operational efficiency with the strict documentation and auditability requirements of state cannabis licensing</li>
-            </ul>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-name">Laurie + MaryJane</div>
+                    <div class="job-title">Chief Technology Officer</div>
+                    <div class="job-dates">May 2020 – January 2023</div>
+                </div>
+                <p class="company-description">
+                    Laurie + MaryJane is an award-winning, family-owned cannabis edibles company based in Portland, Oregon, sold in 200+ dispensaries statewide.
+                </p>
+                <ul>
+                    <li>Oversaw all IT operations for a regulated manufacturing environment, balancing operational efficiency with the strict documentation and auditability requirements of state cannabis licensing</li>
+                    <li>Implemented training programs that reduced onboarding time by 40% while maintaining zero compliance violations</li>
+                    <li>Designed and implemented METRC-integrated inventory tracking systems to meet Oregon state regulatory compliance, maintaining a clean compliance record with zero audit findings as the company scaled from 5 to 200+ dispensary partnerships</li>
+                    <li>Built and managed facility security infrastructure including access control, surveillance networks, and compliance logging for a 20-person production operation</li>
+                    <li>Developed ingredient management and batch tracking workflows for edible manufacturing, enabling precise dosing consistency and quality control as the team grew from 3 to 20 staff during the pandemic-driven market boom</li>
+                </ul>
+            </div>
 
-            <h3>Actionaly Inc. (formerly BluPods)</h3>
-            <div class="job-title">Head of Customer Success</div>
-            <div class="date-range">December 2019 - May 2020</div>
-            <p class="company-description">Actionaly is a family engagement start-up geared around household engagement and "need to know" information, rather than a constant rush of information.</p>
-            <ul>
-                <li>Partnered with engineering to design, prioritize, and ship product updates including automatic translation and newsletter features</li>
-                <li>Built initial Customer Success structure after 3-4 years of formerly ad-hoc support, writing the standard operating procedures for customer success managers to follow</li>
-                <li>Identified usability pain points with customers and partnered with engineering and sales to ship solutions</li>
-            </ul>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-name">Actionaly Inc. (formerly BluPods)</div>
+                    <div class="job-title">Head of Customer Success</div>
+                    <div class="job-dates">December 2019 – May 2020</div>
+                </div>
+                <p class="company-description">
+                    Actionaly is a family engagement start-up geared around household engagement and "need to know" information, rather than a constant rush of information.
+                </p>
+                <ul>
+                    <li>Partnered with engineering to design, prioritize, and ship product updates including automatic translation and newsletter features</li>
+                    <li>Built initial Customer Success structure after 3-4 years of formerly ad-hoc support. Wrote customer success "standard operating procedure" for customer success managers to follow</li>
+                    <li>Identified usability and initial implementation pain points with current customers and worked with engineering and sales to find dynamic solutions</li>
+                </ul>
+            </div>
 
-            <h3>Alma Technologies</h3>
-            <div class="job-title">Director of Key Accounts</div>
-            <div class="date-range">June 2016 - November 2019</div>
-            <p class="company-description">Alma Technologies is a Student Information System with an emphasis on modern instructional practices like standards-based grading.</p>
-            <ul>
-                <li>Grew customer base from 4 school districts to over 50 during tenure, with most growth driven by customer referrals</li>
-                <li>Designed and shipped an Onboarding Portal in under two months, saving approximately 20 hours per customer on data migration and still in use today</li>
-                <li>Partnered with Product and Engineering to design and release major platform updates including a customer report builder and enhanced standards-based gradebook</li>
-                <li>Redesigned customer service workflows to improve support quality for both customers and internal engineers</li>
-            </ul>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-name">Alma Technologies</div>
+                    <div class="job-title">Director of Key Accounts</div>
+                    <div class="job-dates">June 2016 – November 2019</div>
+                </div>
+                <p class="company-description">
+                    Alma Technologies is a Student Information System (SIS) with an emphasis on modern instructional practices, such as standards based grading.
+                </p>
+                <ul>
+                    <li>Grew customer base from 4 school districts to over 50 during tenure, with most growth driven by customer referrals</li>
+                    <li>Designed and shipped an Onboarding Portal in under two months, saving approximately 20 hours per customer on data migration and still in use today</li>
+                    <li>Partnered with Product and Engineering to design and release major platform updates including a customer report builder and enhanced standards-based gradebook</li>
+                    <li>Redesigned customer service workflows to improve support quality for both customers and internal engineers</li>
+                </ul>
+            </div>
 
-            <h3>KIPP Foundation</h3>
-            <div class="job-title">Senior Product Manager / Digital Media and Operations Manager</div>
-            <div class="date-range">July 2013 - June 2016</div>
-            <p class="company-description">The KIPP Foundation is a nonprofit charter school management organization supporting over 250 schools nationwide.</p>
-            <ul>
-                <li>Planned, developed, and managed KIPP U, a professional development platform used by over 1,400 teachers across dozens of schools and regions</li>
-                <li>Led LMS vendor selection process end-to-end: wrote the RFP, evaluated vendors, managed stakeholder alignment, and oversaw content migration to the new platform</li>
-                <li>Managed multiple teams of external developers and trained dozens of schools on platform implementation</li>
-            </ul>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-name">KIPP Foundation</div>
+                    <div class="job-title">Senior Product Manager</div>
+                    <div class="job-title">Digital Media and Operations Manager</div>
+                    <div class="job-dates">March 2015 – June 2016</div>
+                    <div class="job-dates">July 2013 – March 2015</div>
+                </div>
+                <p class="company-description">
+                    The KIPP Foundation is a national nonprofit supporting 275+ KIPP charter schools nationwide.
+                </p>
+                <ul>
+                    <li>Planned, developed, and managed KIPP U, a professional development platform used by over 1,400 teachers across dozens of schools and regions</li>
+                    <li>Led LMS vendor selection process end-to-end: wrote the RFP, evaluated vendors, managed stakeholder alignment, and oversaw content migration to the new platform</li>
+                    <li>Managed multiple teams of external developers and trained dozens of schools on platform implementation</li>
+                </ul>
+            </div>
 
-            <h3>KIPP NYC</h3>
-            <div class="job-title">Special Projects Manager / Technology Associate</div>
-            <div class="date-range">December 2009 - June 2013</div>
-            <p class="company-description">KIPP NYC is a nonprofit charter school network of 15 schools serving nearly 6,500 students.</p>
-            <ul>
-                <li>Managed technology buildout during KIPP NYC's expansion from 4 to 9 schools, delivering 7 site renovations, 3 new school startups, and 1 school relocation on schedule with an average budget of $510k per project</li>
-                <li>Implemented Salesforce to track student and alumni data, training 75 staff members and designing custom reports</li>
-                <li>Coordinated website redesign that increased average time on page by 62%</li>
-                <li>Led migration of 300 user accounts and 50,000+ files from SharePoint to a cloud-based knowledge management system, training 350 teachers and staff</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-section">
-                <p><strong>Product:</strong> Jira, Asana, Figma (collaboration), Lovable</p>
-                <p><strong>AI/ML:</strong> OpenAI API, Codex, Claude Code, n8n, Langfuse, Google Gemini, Gong</p>
-                <p><strong>Platforms:</strong> Google Workspace, Microsoft Office 365, Salesforce CRM, Zendesk, HubSpot</p>
-                <p><strong>EdTech Systems:</strong> Student Information Systems (Alma, PowerSchool, Infinite Campus), Learning Management Systems (Canvas, Schoology, Google Classroom), Mobile Device Management (Jamf, Google Workspace)</p>
-                <p><strong>Technical:</strong> HTML, CSS, JavaScript, Python (learning), API integrations</p>
-                <p><strong>Certifications:</strong> <a href="https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner" target="_blank">Certified Scrum Product Owner (CSPO)</a>, <a href="https://www.coursera.org/professional-certificates/google-it-support" target="_blank">Google IT Support Certificate</a>, <a href="https://www.coursera.org/professional-certificates/g-suite-administration" target="_blank">Google Workspace Administration Specialization</a></p>
+            <div class="job">
+                <div class="job-header">
+                    <div class="company-name">KIPP NYC</div>
+                    <div class="job-title">Special Projects Manager</div>
+                    <div class="job-title">Technology Associate</div>
+                    <div class="job-dates">August 2010 – June 2013</div>
+                    <div class="job-dates">December 2009 – July 2010</div>
+                </div>
+                <p class="company-description">
+                    KIPP NYC is a regional nonprofit charter management organization operating 18 schools in New York City, part of the broader KIPP network.
+                </p>
+                <ul>
+                    <li>Managed technology buildout during KIPP NYC's expansion from 4 to 9 schools, delivering 7 site renovations, 3 new school startups, and 1 school relocation on schedule with an average budget of $510k per project</li>
+                    <li>Implemented Salesforce to track student and alumni data, training 75 staff members and designing custom reports</li>
+                    <li>Coordinated website redesign that increased average time on page by 62%</li>
+                    <li>Led migration of 300 user accounts and 50,000+ files from SharePoint to a cloud-based knowledge management system, training 350 teachers and staff</li>
+                </ul>
             </div>
         </section>
 
-        <section>
+        <section class="skills-section">
+            <h2>Technical Skills &amp; Platforms</h2>
+            <div class="skill-category">
+                <strong>Product:</strong> Jira, Asana, Figma (collaboration), Lovable
+            </div>
+            <div class="skill-category">
+                <strong>AI/ML:</strong> OpenAI API, Codex, Claude Code, n8n, Langfuse, Google Gemini, Gong
+            </div>
+            <div class="skill-category">
+                <strong>Platforms:</strong> Google Workspace, Microsoft Office 365, Salesforce CRM, Zendesk, HubSpot
+            </div>
+            <div class="skill-category">
+                <strong>EdTech Systems:</strong> Student Information Systems (Alma, PowerSchool, Infinite Campus), Learning Management Systems (Canvas, Schoology, Google Classroom), Mobile Device Management (Jamf, Google Workspace)
+            </div>
+            <div class="skill-category">
+                <strong>Technical:</strong> HTML, CSS, JavaScript, SQL (learning), API integrations
+            </div>
+            <div class="skill-category">
+                <strong>Certifications:</strong> Certified Scrum Product Owner (CSPO), Google IT Support Certificate, Google Workspace Administration Specialization
+            </div>
+        </section>
+
+        <section class="education">
             <h2>Education</h2>
-            <h3>McGill University</h3>
-            <div class="job-title">History Major, East Asian Studies Minor</div>
-            <div class="date-range">2005 - 2009</div>
+            <div class="education-header">
+                <div class="school-name">McGill University</div>
+                <div class="education-dates">2005-2009</div>
+            </div>
+            <div class="degree-info">History Major</div>
+            <div class="degree-info">East Asian Studies Minor</div>
             <ul>
                 <li>Elected to McGill University Senate, the highest academic governing body (2009)</li>
                 <li>President, Arts Undergraduate Society, representing 6,500+ students (2008-2009)</li>
