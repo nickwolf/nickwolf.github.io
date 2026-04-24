@@ -7,3 +7,4 @@ Product leader specializing in AI-powered EdTech products and platform evolution
 - Location: Houston, TX
 
 View my full resume at: https://nickwolf.github.io
+Check out my vibe-coded audiobook recommendation engine: https://github.com/nickwolf/bookclub
